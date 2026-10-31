@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0b1329;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.65rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 0.45rem 1.1rem;
+    font-size: 0.9rem;
+}
+
+.btn-full {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-yellow {
+    background-color: #0099ff;
+    color: #ffffff;
+}
+
+.btn-yellow:hover {
+    background-color: #0077cc;
+}
+
+.btn-outline {
+    border-color: #0099ff;
+    color: #0099ff;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background-color: #0099ff;
+    color: #ffffff;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.75rem;
+    background-color: #3b2005;
+    color: #ff9900;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #0099ff;
+    margin-bottom: 1.5rem;
+}
+
+/* Header a ancho completo (100%) */
+.header {
+    width: 100%;
+    background-color: #060c1a;
+    border-bottom: 1px solid #1e2942;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 70px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #0099ff;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #0099ff;
+}
+
+/* Hero Section a ancho completo (100%) */
+.hero {
+    width: 100%;
+    background-color: #060c1a;
+    padding: 3rem 0 4.5rem 0;
+    color: #ffffff;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    color: #94a3b8;
+    font-size: 1.05rem;
+    margin-bottom: 1.75rem;
+    max-width: 480px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background-color: #132247;
+    border: 1px solid #1e2942;
+}
+
+
+.projects-section {
+    width: 100%;
+    padding: 3.5rem 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.project-card {
+    background-color: #132247;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #1e2942;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    color: #94a3b8;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Sección Galería */
+.gallery-section {
+    width: 100%;
+    padding: 1rem 0 4rem 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+}
+
+.gallery-item {
+    border-radius: 12px;
+    overflow: hidden;
+    height: 160px;
+    background-color: #132247;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1e2942;
+}
+
+/* Footer a ancho completo (100%) */
+.footer {
+    width: 100%;
+    background-color: #03060d;
+    padding: 1.25rem 0;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.footer-links a {
+    color: #94a3b8;
+}
+
+.footer-links a:hover {
+    color: #0099ff;
+}
+
+
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-container {
+        flex-direction: row;
+    }
+
+    .hero-text, .hero-image {
+        flex: 1;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 140px;
+    }
+
+    .gallery-item {
+        height: 100%;
+    }
+
+    .item-3 {
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .hero-text h1 {
+        font-size: 3.2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 130px);
+        gap: 1rem;
+    }
+
+    .item-1 { grid-column: 1 / 3; grid-row: 1; }
+    .item-2 { grid-column: 3 / 4; grid-row: 1; }
+    .item-3 { grid-column: 4 / 5; grid-row: 1 / 3; }
+    
+    .item-4 { grid-column: 1 / 2; grid-row: 2; }
+    .item-5 { grid-column: 2 / 3; grid-row: 2; }
+    .item-6 { grid-column: 3 / 4; grid-row: 2; }
+
+    .item-7 { grid-column: 1 / 3; grid-row: 3; }
+    .item-8 { grid-column: 3 / 4; grid-row: 3; }
+    .item-9 { grid-column: 4 / 5; grid-row: 3; }
+}
